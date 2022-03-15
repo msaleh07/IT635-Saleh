@@ -1,0 +1,8 @@
+INSERT INTO sites VALUES (0, 'Parsippany HQ', '4 Gatehall Dr', 'Parsippany', 'NJ', '07054', '9734016500');
+INSERT INTO sites VALUES (1, 'Crisco', '5204 Spring Grove Ave', 'Cincinnati', 'OH', '45217', '5134828000');
+INSERT INTO sites VALUES (2, 'Clabber Girl', 'E Margaret Dr', 'Terre Haute', 'IN', '47803', '8122329446');
+INSERT INTO sites VALUES (3, 'ACH', '2301 SE Tones Dr', 'Ankeny', 'IA', '50021', '5159652711');
+NSERT INTO tech VALUES (0, 'Mohamed', 'Lead Network Engineer');
+INSERT INTO tech VALUES (1, 'Mike', 'Support Engineer');
+INSERT INTO tech VALUES (2, 'Zac', 'Tech Support');
+INSERT INTO tech VALUES (3, 'Brian', 'Lead Engineering');

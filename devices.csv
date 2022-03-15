@@ -1,0 +1,20 @@
+device_id,product_no,product_des,S/N
+1,A-FLEX-3,Collaboration Flex Plan 3.0,AC4A631449389
+2,A-FLEX-P-CA,Common Area Smart License (1),A02546E2E03B9
+3,A-FLEX-PROPACK-ENT,Pro Pack for Cisco Control Hub Entitlement,218C5AE89C418
+4,A-FLEX-SME-S,Session Manager (1),EC06C077441E9
+5,A-FLEX-EXP-PAK,Expressway Product Authorization Key (1),0EA58E5EFE719
+6,A-FLEX-MSG-ENT,Messaging Entitlement,EC07C077441E9
+7,A-FLEX-C-DEV-ENT,Cloud Device Registration Entitlement,AC5A631449389
+8,A-FLEX-P-DEV,Telepresence Room Smart License (1),218C5AE89C419
+9,A-FLEX-SW-12.5-K9,On-Premises & Partner Hosted Calling SW Bundle v12.5 (1),218C5AE89C420
+10,A-FLEX-P-UCXN,Unity Connection Smart License (1),218C5AE89C421
+11,A-FLEX-EXP-RMS,Expressway Rich Media Session (1),218C5AE89C422
+12,A-FLEX-P-ER,Emergency Responder Smart License (1),218C5AE89C423
+13,A-FLEX-P-DEV-REG,NU TelePresence Room,218C5AE89C424
+14,A-FLEX-SRST-E,SRST Endpoints (1),218C5AE89C425
+15,A-FLEX-EAPL,EntW On-Premises Calling,218C5AE89C426
+16,A-FLEX-FILESTG-ENT,File Storage Entitlement,EC06C077441ES
+17,A-FLEX-CCUCS-EA,Cloud Connected UC EA Standard ENT,EC06C077441AS
+18,A-FLEX-P-ACC,Access Smart License (1),EC06C077442ES
+19,A-FLEX-P-EA,On-Premises Smart License - EA (1),EC06C067441ES
