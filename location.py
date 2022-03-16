@@ -15,8 +15,7 @@ cur.execute("""
 for row in cur:
     site_name = row[1]
     tech_name = row[2]
-    print(f"{site_name} , {tech
-    }")
+    print(f"{site_name} , {tech_name}")
 print(f"Installed at: {row[0]}")
 
 cur.close()
