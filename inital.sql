@@ -31,7 +31,7 @@ CREATE TABLE tech (
   CONSTRAINT fk_device FOREIGN KEY (device_id) REFERENCES devices(device_id)
 );
 CREATE TABLE locations (
-  device_id       INTEGER NOT NULL,
+  location_id       INTEGER NOT NULL,
   site_id         INTEGER NOT NULL,
   tech_id         INTEGER NOT NULL,
   PRIMARY KEY ( device_id, site_id, tech_id ),
