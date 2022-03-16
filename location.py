@@ -4,7 +4,7 @@ conn = psycopg2.connect("postgresql://network_admin:saleh@localhost/network_inve
 cur = conn.cursor()
 
 print("Please enter device ID")
-location_id = int(input())
+device_id = int(input())
 cur.execute("""
     SELECT sites.name, tech.name,
     FROM locations, sites, tech
