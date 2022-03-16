@@ -7,7 +7,7 @@ CREATE TABLE devices (
   device_id       INTEGER NOT NULL,
   product_no      VARCHAR(128) NOT NULL,
   product_des     VARCHAR(256) NOT NULL,
-  S/N             VARCHAR(64) NOT NULL,
+  SN             VARCHAR(64) NOT NULL,
   PRIMARY KEY     ( device_id )
 );
 
