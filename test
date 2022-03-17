@@ -1,0 +1,13 @@
+import psycopg2
+
+conn = psycopg2.connect("postgresql://network_admin:saleh@localhost/network_inventory")
+cur = conn.cursor()
+
+print("Please enter device ID")
+device_id = int(input())
+cur.execute("""
+    SELECT sites.name, tech.name 
+    FROM sites, tech, devices
+    WHERE devices.device_id=sites.site_id
+          AND device_id=%s
+""", (device_id,));
