@@ -9,6 +9,7 @@ cur.execute("""
     SELECT sites.name, devices.product_des, tech.name 
     FROM sites, tech, devices
     WHERE devices.device_id=sites.site_id
+          AND tech.tech_id=tech.tech_id
           AND device_id=%s
 """, (device_id,));     
 for row in cur:
