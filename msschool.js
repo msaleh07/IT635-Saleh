@@ -1,4 +1,3 @@
-
 db = db.getSiblingDB("schooldb")
 
 db.createCollection("students", {
@@ -54,18 +53,18 @@ db.createCollection("subjects")
 // adding some students to make sure that the validator runs correctly 
 db.students.insertMany([
   {
-    First Name: "Ahmed",
-    Last Name: "Sherif",
-    Address: {
+    name: "Ahmed Sherif",
+    address: {
       street: "321 Main Street",
       city: "Paterson",
       state: "NJ",
       zip: "07505"
+    },
 	  phone: "7895566554"
     },
 	{
     name: "Yasser Mamdouh",
-    Address: {
+    address: {
       street: "456 Max Drive",
       city: "Wayne",
       state: "NJ", 
