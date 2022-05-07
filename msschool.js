@@ -10,12 +10,10 @@ db.createCollection("students", {
           bsonType: "string",
           description: "must be a string and is required"
         },
-        // we make use of MongoDBs ability to store nested objects
         address: {
           bsonType: "object",
           required: [ "street", "city", "state", "zip" ],
           properties: {
-            // this is an optional property for extra street information (apartment number, etc)
             additional: {
               bsonType: "string",
               description: "must be a string if the field exists"
@@ -55,6 +53,7 @@ db.students.insertMany([
   {
     name: "Ahmed Sherif",
     address: {
+		additional: "apt F",
       street: "321 Main Street",
       city: "Paterson",
       state: "NJ",
@@ -65,6 +64,7 @@ db.students.insertMany([
 	{
     name: "Yasser Mamdouh",
     address: {
+		additional: "2nd floor",
       street: "456 Max Drive",
       city: "Wayne",
       state: "NJ", 
