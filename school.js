@@ -63,5 +63,5 @@ db.students.insertMany([
       state: "NJ",
       zip: "08619"
 	  phone: "6095555555"
-    },
+    }
 ])
