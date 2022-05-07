@@ -2,7 +2,7 @@ db = db.getSiblingDB("agSchool")
 
 // this first collection has a validator
 db.createCollection("students", {
-StudentValidator = {
+  StudentValidator : {
   $jsonSchema: {
     bsonType: "object",
     required: [ "First Name", "Last Name", "Address", "City", "Zip", "Phone" ],
