@@ -1,23 +1,20 @@
-db = db.getSiblingDB("agSchool")
 
-// this first collection has a validator
+db = db.getSiblingDB("schooldb")
+
 db.createCollection("students", {
-  StudentValidator : {
-  $jsonSchema: {
-    bsonType: "object",
-    required: [ "First Name", "Last Name", "Address", "City", "Zip", "Phone" ],
-    properties: { 
-	  "First Name": {
-        bsonType: "string",
-        description: "First Name must exist and be a string"
-      },
-      "Last Name": {
-        bsonType: "string",
-        description: "Length must exist and be a string"
-      },
-      Address: {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: [ "name", "address" ],
+      properties: {
+        name: {
+          bsonType: "string",
+          description: "must be a string and is required"
+        },
+        // we make use of MongoDBs ability to store nested objects
+        address: {
           bsonType: "object",
-          required: [ "street", "city", "state", "zip", "phone" ],
+          required: [ "street", "city", "state", "zip" ],
           properties: {
             // this is an optional property for extra street information (apartment number, etc)
             additional: {
@@ -39,16 +36,18 @@ db.createCollection("students", {
             zip: {
               bsonType: "string",
               description: "must be a string and is reuired"
-            },
-			phone: {
+            }
+          }
+        },
+        phone: {
           bsonType: "string",
           description: "must be a string and is required"
+        }
       }
     }
   }
 })
 
-// these collections _do not_ have validators
 db.createCollection("teachers")
 db.createCollection("subjects")
 
@@ -58,10 +57,20 @@ db.students.insertMany([
     First Name: "Ahmed",
     Last Name: "Sherif",
     Address: {
-      street: "123 Madeup Road",
-      city: "Trenton",
+      street: "321 Main Street",
+      city: "Paterson",
       state: "NJ",
-      zip: "08619"
-	  phone: "6095555555"
-    }
+      zip: "07505"
+	  phone: "7895566554"
+    },
+	{
+    name: "Yasser Mamdouh",
+    Address: {
+      street: "456 Max Drive",
+      city: "Wayne",
+      state: "NJ", 
+      zip: "07054"
+    },
+    phone: "8327756546"
+  }
 ])
